@@ -1,543 +1,411 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Smart Money Guide | Practical Personal Finance</title>
 
-    <meta name="description"
-        content="Practical, clear personal-finance guidance for budgeting, saving, tracking expenses, and planning ahead.">
+    <meta name="description" content="Practical, clear personal-finance guidance for budgeting, saving, tracking expenses, and planning ahead.">
 
     <meta property="og:title" content="Smart Money Guide">
-    <meta property="og:description"
-        content="Clear, practical ideas for making confident money decisions.">
+    <meta property="og:description" content="Clear, practical ideas for making confident money decisions.">
     <meta property="og:type" content="website">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google AdSense -->
-    <script async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3291179935830795"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3291179935830795"
         crossorigin="anonymous"></script>
 
-    <!-- Home Page Demo Advertisement Style -->
     <style>
-        .home-main {
-            position: relative;
-            display: block;
-            clear: both;
-        }
-
-        .home-ad-section {
-            position: relative;
-            display: block !important;
-            clear: both;
+        /* Temporary Advertisement Placeholder */
+        .temporary-ad {
             width: 100%;
-            padding: 0 0 20px;
-            margin: 0;
-            visibility: visible !important;
-            opacity: 1 !important;
-        }
-
-        .home-demo-ad {
-            width: 100%;
-            min-height: 170px;
-
-            margin: 20px auto 30px;
-            padding: 30px 20px;
-
-            display: flex !important;
+            min-height: 180px;
+            margin: 20px auto 45px;
+            padding: 35px 20px;
+            border: 1px dashed #b8b8b8;
+            border-radius: 12px;
+            background: #f7f7f7;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             text-align: center;
-
-            background: #f1f8f5;
-            border: 2px dashed #176b5b;
-            border-radius: 12px;
-
-            position: relative;
-            z-index: 100;
-
-            clear: both;
-
-            visibility: visible !important;
-            opacity: 1 !important;
-
-            box-sizing: border-box;
+            color: #777;
         }
 
-        .home-demo-ad-title {
-            display: block !important;
-
-            color: #176b5b;
-            font-size: 14px;
-            font-weight: 800;
-
-            letter-spacing: 2px;
+        .temporary-ad .ad-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
             text-transform: uppercase;
-
+            color: #666;
             margin-bottom: 8px;
         }
 
-        .home-demo-ad-text {
-            display: block !important;
-
-            color: #627a70;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .home-featured-section {
-            position: relative;
-            display: block;
-            clear: both;
-        }
-
-        .home-footer {
-            position: relative;
-            display: block;
-            clear: both;
-        }
-
-        @media (max-width: 767px) {
-
-            .home-demo-ad {
-                min-height: 140px;
-                margin: 15px auto 25px;
-                padding: 25px 15px;
-            }
-
-            .home-demo-ad-title {
-                font-size: 12px;
-            }
-
-            .home-demo-ad-text {
-                font-size: 13px;
-            }
+        .temporary-ad .ad-message {
+            font-size: 15px;
+            color: #888;
         }
     </style>
-
 </head>
-
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
 
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-mark">$</span>Smart Money Guide
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                <li>
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="blog.html">Articles</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="about.html">About & Contact</a>
+                </li>
+
+                <li>
+                    <a class="btn btn-outline-brand ms-lg-2" href="blog.html">
+                        Explore guides
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
 
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-mark">$</span>
-                Smart Money Guide
-            </a>
+            <div class="row align-items-center">
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav"
-                aria-controls="nav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+                <div class="col-lg-8 reveal">
 
-                <span class="navbar-toggler-icon"></span>
+                    <div class="eyebrow mb-3">
+                        Money clarity starts here
+                    </div>
 
-            </button>
+                    <h1>
+                        Make more confident decisions with your money.
+                    </h1>
 
-            <div id="nav" class="collapse navbar-collapse">
+                    <p class="mt-4 mb-4">
+                        Smart Money Guide makes personal finance feel practical—not overwhelming—with simple ideas you can use at every stage of life.
+                    </p>
 
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <a class="btn btn-brand me-2" href="blog.html">
+                        Read the latest guides
+                    </a>
 
-                    <li>
-                        <a class="nav-link active" href="index.html">
-                            Home
-                        </a>
-                    </li>
+                    <a class="btn btn-outline-brand" href="#topics">
+                        Browse topics
+                    </a>
 
-                    <li>
-                        <a class="nav-link" href="blog.html">
-                            Articles
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="nav-link" href="about.html">
-                            About & Contact
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="btn btn-outline-brand ms-lg-2" href="blog.html">
-                            Explore guides
-                        </a>
-                    </li>
-
-                </ul>
+                </div>
 
             </div>
 
         </div>
+    </section>
 
-    </nav>
+
+    <!-- Topics Section -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading mb-5">
+
+                <div class="eyebrow mb-2">
+                    A stronger financial foundation
+                </div>
+
+                <h2>
+                    Small, informed steps add up.
+                </h2>
+
+                <p class="muted">
+                    Personal finance is less about perfection and more about building habits that give you visibility, flexibility, and peace of mind.
+                </p>
+
+            </div>
 
 
-    <main class="home-main">
+            <div class="row g-4" id="topics">
 
-        <!-- Hero Section -->
-        <section class="hero">
+                <!-- Budgeting -->
+                <div class="col-md-6 col-lg-3">
 
-            <div class="container">
+                    <div class="topic-card">
 
-                <div class="row align-items-center">
-
-                    <div class="col-lg-8 reveal">
-
-                        <div class="eyebrow mb-3">
-                            Money clarity starts here
+                        <div class="icon">
+                            01
                         </div>
 
-                        <h1>
-                            Make more confident decisions with your money.
-                        </h1>
+                        <h3>
+                            Budgeting
+                        </h3>
 
-                        <p class="mt-4 mb-4">
-                            Smart Money Guide makes personal finance feel
-                            practical—not overwhelming—with simple ideas you
-                            can use at every stage of life.
+                        <p class="muted">
+                            Give every rupee a purpose with a budget that fits your real life.
                         </p>
 
-                        <a class="btn btn-brand me-2" href="blog.html">
-                            Read the latest guides
-                        </a>
-
-                        <a class="btn btn-outline-brand" href="#topics">
-                            Browse topics
+                        <a class="text-success fw-bold" href="blog.html#budget">
+                            Learn more →
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
-        </section>
+                <!-- Saving -->
+                <div class="col-md-6 col-lg-3">
 
+                    <div class="topic-card">
 
-        <!-- Topics Section -->
-        <section class="section">
+                        <div class="icon">
+                            02
+                        </div>
 
-            <div class="container">
+                        <h3>
+                            Saving Money
+                        </h3>
 
-                <div class="section-heading mb-5">
+                        <p class="muted">
+                            Find realistic ways to save without making your life feel smaller.
+                        </p>
 
-                    <div class="eyebrow mb-2">
-                        A stronger financial foundation
+                        <a class="text-success fw-bold" href="blog.html#saving">
+                            Learn more →
+                        </a>
+
                     </div>
-
-                    <h2>
-                        Small, informed steps add up.
-                    </h2>
-
-                    <p class="muted">
-                        Personal finance is less about perfection and more
-                        about building habits that give you visibility,
-                        flexibility, and peace of mind.
-                    </p>
 
                 </div>
 
 
-                <div class="row g-4" id="topics">
+                <!-- Expense Tracking -->
+                <div class="col-md-6 col-lg-3">
 
-                    <!-- Budgeting -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="topic-card">
 
-                        <div class="topic-card">
-
-                            <div class="icon">
-                                01
-                            </div>
-
-                            <h3>
-                                Budgeting
-                            </h3>
-
-                            <p class="muted">
-                                Give every rupee a purpose with a budget that
-                                fits your real life.
-                            </p>
-
-                            <a class="text-success fw-bold"
-                                href="blog.html#budget">
-                                Learn more →
-                            </a>
-
+                        <div class="icon">
+                            03
                         </div>
+
+                        <h3>
+                            Expense Tracking
+                        </h3>
+
+                        <p class="muted">
+                            Understand your spending patterns and make decisions with better data.
+                        </p>
+
+                        <a class="text-success fw-bold" href="blog.html#tracking">
+                            Learn more →
+                        </a>
 
                     </div>
 
+                </div>
 
-                    <!-- Saving -->
-                    <div class="col-md-6 col-lg-3">
 
-                        <div class="topic-card">
+                <!-- Financial Planning -->
+                <div class="col-md-6 col-lg-3">
 
-                            <div class="icon">
-                                02
-                            </div>
+                    <div class="topic-card">
 
-                            <h3>
-                                Saving Money
-                            </h3>
-
-                            <p class="muted">
-                                Find realistic ways to save without making
-                                your life feel smaller.
-                            </p>
-
-                            <a class="text-success fw-bold"
-                                href="blog.html#saving">
-                                Learn more →
-                            </a>
-
+                        <div class="icon">
+                            04
                         </div>
 
-                    </div>
+                        <h3>
+                            Financial Planning
+                        </h3>
 
+                        <p class="muted">
+                            Turn today’s priorities into a thoughtful plan for tomorrow.
+                        </p>
 
-                    <!-- Expense Tracking -->
-                    <div class="col-md-6 col-lg-3">
-
-                        <div class="topic-card">
-
-                            <div class="icon">
-                                03
-                            </div>
-
-                            <h3>
-                                Expense Tracking
-                            </h3>
-
-                            <p class="muted">
-                                Understand your spending patterns and make
-                                decisions with better data.
-                            </p>
-
-                            <a class="text-success fw-bold"
-                                href="blog.html#tracking">
-                                Learn more →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Financial Planning -->
-                    <div class="col-md-6 col-lg-3">
-
-                        <div class="topic-card">
-
-                            <div class="icon">
-                                04
-                            </div>
-
-                            <h3>
-                                Financial Planning
-                            </h3>
-
-                            <p class="muted">
-                                Turn today’s priorities into a thoughtful
-                                plan for tomorrow.
-                            </p>
-
-                            <a class="text-success fw-bold"
-                                href="blog.html#planning">
-                                Learn more →
-                            </a>
-
-                        </div>
+                        <a class="text-success fw-bold" href="blog.html#planning">
+                            Learn more →
+                        </a>
 
                     </div>
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- DEMO ADVERTISEMENT -->
-        <section
-            class="container home-ad-section"
-            aria-label="Demo Advertisement">
-
-            <div class="home-demo-ad">
-
-                <span class="home-demo-ad-title">
-                    Advertisement — DEMO
-                </span>
-
-                <span class="home-demo-ad-text">
-                    Sample advertisement placement for demonstration purposes
-                </span>
-
-            </div>
-
-        </section>
-
-
-        <!-- Featured Guide -->
-        <section class="section pt-3 home-featured-section">
-
-            <div class="container">
-
-                <div class="featured">
-
-                    <div class="row align-items-center g-4">
-
-                        <div class="col-lg-8">
-
-                            <div class="eyebrow mb-3"
-                                style="color:#8fd1b5">
-                                Featured guide
-                            </div>
-
-                            <h2>
-                                Build a budget you can actually stick with
-                            </h2>
-
-                            <p class="muted mt-3">
-                                The best budget is one that reflects your
-                                priorities, leaves room for real life, and is
-                                easy to revisit. Start with a clear
-                                picture—not a restrictive list.
-                            </p>
-
-                        </div>
-
-
-                        <div class="col-lg-4 text-lg-end">
-
-                            <a class="btn btn-light"
-                                href="blog.html#budget">
-                                Read the article →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="home-footer">
-
-        <div class="container">
-
-            <div class="row g-4">
-
-                <div class="col-lg-6">
-
-                    <div class="navbar-brand text-white mb-2 d-block">
-
-                        <span class="brand-mark">$</span>
-                        Smart Money Guide
-
-                    </div>
-
-                    <p class="small mb-0">
-                        Clear, practical information for everyday money
-                        decisions.
-                    </p>
-
-                </div>
-
-
-                <div class="col-6 col-lg-3">
-
-                    <div class="footer-heading mb-2">
-                        Explore
-                    </div>
-
-                    <a class="d-block mb-1" href="blog.html">
-                        Articles
-                    </a>
-
-                    <a class="d-block" href="about.html">
-                        About & Contact
-                    </a>
-
-                </div>
-
-
-                <div class="col-6 col-lg-3">
-
-                    <div class="footer-heading mb-2">
-                        Information
-                    </div>
-
-                    <a class="d-block mb-1"
-                        href="about.html#privacy">
-                        Privacy Policy
-                    </a>
-
-                    <a class="d-block mb-1"
-                        href="about.html#terms">
-                        Terms of Use
-                    </a>
-
-                    <a class="d-block"
-                        href="about.html#disclaimer">
-                        Disclaimer
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <hr class="border-secondary my-4">
-
-
-            <p class="small mb-0">
-
-                © <span data-year></span>
-                Smart Money Guide.
-                For educational purposes only.
-
-            </p>
 
         </div>
 
-    </footer>
+    </section>
 
 
-    <!-- Bootstrap -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <!-- Temporary Advertisement -->
+    <section class="container" aria-label="Advertisement">
 
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+        <div class="temporary-ad">
+
+            <div class="ad-label">
+                Advertisement
+            </div>
+
+            <div class="ad-message">
+                Your ad will appear here
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Guide -->
+    <section class="section pt-3">
+
+        <div class="container">
+
+            <div class="featured">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-8">
+
+                        <div class="eyebrow mb-3" style="color:#8fd1b5">
+                            Featured guide
+                        </div>
+
+                        <h2>
+                            Build a budget you can actually stick with
+                        </h2>
+
+                        <p class="muted mt-3">
+                            The best budget is one that reflects your priorities, leaves room for real life, and is easy to revisit. Start with a clear picture—not a restrictive list.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end">
+
+                        <a class="btn btn-light" href="blog.html#budget">
+                            Read the article →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="navbar-brand text-white mb-2 d-block">
+                    <span class="brand-mark">$</span>
+                    Smart Money Guide
+                </div>
+
+                <p class="small mb-0">
+                    Clear, practical information for everyday money decisions.
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="footer-heading mb-2">
+                    Explore
+                </div>
+
+                <a class="d-block mb-1" href="blog.html">
+                    Articles
+                </a>
+
+                <a class="d-block" href="about.html">
+                    About & Contact
+                </a>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="footer-heading mb-2">
+                    Information
+                </div>
+
+                <a class="d-block mb-1" href="about.html#privacy">
+                    Privacy Policy
+                </a>
+
+                <a class="d-block mb-1" href="about.html#terms">
+                    Terms of Use
+                </a>
+
+                <a class="d-block" href="about.html#disclaimer">
+                    Disclaimer
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary my-4">
+
+
+        <p class="small mb-0">
+            © <span data-year></span> Smart Money Guide.
+            For educational purposes only.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
 
 </body>
-
 </html>
