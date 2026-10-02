@@ -19,6 +19,83 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3291179935830795"
         crossorigin="anonymous"></script>
 
+    <!-- Blog Page Fixes -->
+    <style>
+        .blog-main {
+            position: relative;
+            display: block;
+            clear: both;
+        }
+
+        .blog-content {
+            min-width: 0;
+        }
+
+        .blog-sidebar {
+            min-width: 0;
+        }
+
+        /* Demo Advertisement */
+        .demo-ad {
+            width: 100%;
+            min-height: 170px;
+            margin: 30px 0;
+            padding: 30px 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background: #f1f8f5;
+            border: 2px dashed #9ebdb3;
+            border-radius: 12px;
+
+            position: relative;
+            z-index: 10;
+
+            clear: both;
+        }
+
+        .demo-ad-title {
+            display: block;
+            color: #176b5b;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .demo-ad-text {
+            display: block;
+            color: #627a70;
+            font-size: 14px;
+        }
+
+        /* Prevent content from being hidden behind footer */
+        .blog-section {
+            position: relative;
+            display: block;
+            padding-bottom: 80px;
+            clear: both;
+        }
+
+        .blog-footer {
+            position: relative;
+            display: block;
+            clear: both;
+            margin-top: 0;
+        }
+
+        @media (max-width: 991px) {
+            .demo-ad {
+                min-height: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +107,15 @@
             <span class="brand-mark">$</span>Smart Money Guide
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -64,7 +149,7 @@
 </nav>
 
 
-<main>
+<main class="blog-main">
 
     <!-- Page Hero -->
     <header class="page-hero">
@@ -89,13 +174,14 @@
 
 
     <!-- Articles -->
-    <section class="section">
+    <section class="section blog-section">
 
         <div class="container">
 
             <div class="row g-4">
 
-                <div class="col-lg-8">
+                <!-- Main Articles -->
+                <div class="col-lg-8 blog-content">
 
 
                     <!-- Article 1 -->
@@ -133,7 +219,7 @@
 
                         </div>
 
-                        <button class="btn btn-outline-brand read-more">
+                        <button class="btn btn-outline-brand read-more" type="button">
                             Read more
                         </button>
 
@@ -175,21 +261,21 @@
 
                         </div>
 
-                        <button class="btn btn-outline-brand read-more">
+                        <button class="btn btn-outline-brand read-more" type="button">
                             Read more
                         </button>
 
                     </article>
 
 
-                    <!-- Demo Advertisement -->
-                    <div class="ad-slot" aria-label="Demo Advertisement">
+                    <!-- Demo Advertisement 1 -->
+                    <div class="demo-ad" aria-label="Demo Advertisement">
 
-                        <strong>
+                        <span class="demo-ad-title">
                             Advertisement — DEMO
-                        </strong>
+                        </span>
 
-                        <span>
+                        <span class="demo-ad-text">
                             Sample advertisement placement for demonstration purposes
                         </span>
 
@@ -231,7 +317,7 @@
 
                         </div>
 
-                        <button class="btn btn-outline-brand read-more">
+                        <button class="btn btn-outline-brand read-more" type="button">
                             Read more
                         </button>
 
@@ -273,7 +359,7 @@
 
                         </div>
 
-                        <button class="btn btn-outline-brand read-more">
+                        <button class="btn btn-outline-brand read-more" type="button">
                             Read more
                         </button>
 
@@ -315,7 +401,7 @@
 
                         </div>
 
-                        <button class="btn btn-outline-brand read-more">
+                        <button class="btn btn-outline-brand read-more" type="button">
                             Read more
                         </button>
 
@@ -325,7 +411,7 @@
 
 
                 <!-- Sidebar -->
-                <aside class="col-lg-4">
+                <aside class="col-lg-4 blog-sidebar">
 
                     <div class="topic-card">
 
@@ -348,14 +434,14 @@
                     </div>
 
 
-                    <!-- Demo Advertisement -->
-                    <div class="ad-slot mt-4" aria-label="Demo Advertisement">
+                    <!-- Demo Advertisement 2 -->
+                    <div class="demo-ad" aria-label="Demo Advertisement">
 
-                        <strong>
+                        <span class="demo-ad-title">
                             Advertisement — DEMO
-                        </strong>
+                        </span>
 
-                        <span>
+                        <span class="demo-ad-text">
                             Sample advertisement placement for demonstration purposes
                         </span>
 
@@ -373,7 +459,7 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class="blog-footer">
 
     <div class="container">
 
@@ -382,10 +468,8 @@
             <div class="col-lg-6">
 
                 <div class="navbar-brand text-white mb-2 d-block">
-
                     <span class="brand-mark">$</span>
                     Smart Money Guide
-
                 </div>
 
                 <p class="small mb-0">
