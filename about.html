@@ -18,6 +18,87 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3291179935830795"
         crossorigin="anonymous"></script>
+
+    <!-- About Page Fixes -->
+    <style>
+        .about-main {
+            position: relative;
+            display: block;
+            clear: both;
+        }
+
+        .about-section {
+            position: relative;
+            display: block;
+            clear: both;
+            padding-bottom: 70px;
+        }
+
+        .about-content,
+        .contact-content {
+            min-width: 0;
+        }
+
+        /* Demo Advertisement */
+        .demo-ad {
+            width: 100%;
+            min-height: 170px;
+            margin-top: 30px;
+            padding: 30px 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background: #f1f8f5;
+            border: 2px dashed #9ebdb3;
+            border-radius: 12px;
+
+            position: relative;
+            z-index: 10;
+
+            clear: both;
+        }
+
+        .demo-ad-title {
+            display: block;
+            color: #176b5b;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .demo-ad-text {
+            display: block;
+            color: #627a70;
+            font-size: 14px;
+        }
+
+        .about-info-section {
+            position: relative;
+            display: block;
+            clear: both;
+            padding-top: 20px;
+        }
+
+        .about-footer {
+            position: relative;
+            display: block;
+            clear: both;
+            margin-top: 0;
+        }
+
+        @media (max-width: 991px) {
+            .demo-ad {
+                min-height: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +111,15 @@
             <span class="brand-mark">$</span>Smart Money Guide
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -65,7 +154,7 @@
 </nav>
 
 
-<main>
+<main class="about-main">
 
     <!-- Page Hero -->
     <header class="page-hero">
@@ -90,14 +179,14 @@
 
 
     <!-- About & Contact -->
-    <section class="section">
+    <section class="section about-section">
 
         <div class="container">
 
             <div class="row g-5">
 
                 <!-- About -->
-                <div class="col-lg-7">
+                <div class="col-lg-7 about-content">
 
                     <h2>
                         About Smart Money Guide
@@ -124,7 +213,7 @@
 
 
                 <!-- Contact -->
-                <div class="col-lg-5">
+                <div class="col-lg-5 contact-content">
 
                     <div class="topic-card">
 
@@ -194,13 +283,13 @@
 
 
                     <!-- Demo Advertisement -->
-                    <div class="ad-slot mt-4" aria-label="Demo Advertisement">
+                    <div class="demo-ad" aria-label="Demo Advertisement">
 
-                        <strong>
+                        <span class="demo-ad-title">
                             Advertisement — DEMO
-                        </strong>
+                        </span>
 
-                        <span>
+                        <span class="demo-ad-text">
                             Sample advertisement placement for demonstration purposes
                         </span>
 
@@ -216,7 +305,7 @@
 
 
     <!-- Website Information -->
-    <section class="section pt-4">
+    <section class="section about-info-section">
 
         <div class="container">
 
@@ -290,7 +379,7 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class="about-footer">
 
     <div class="container">
 
