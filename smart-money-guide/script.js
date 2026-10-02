@@ -1,0 +1,3 @@
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+document.querySelectorAll('.read-more').forEach(button=>button.addEventListener('click',()=>{const body=button.closest('.article-card').querySelector('.article-body');const open=body.hasAttribute('hidden');body.toggleAttribute('hidden');button.textContent=open?'Show less':'Read more';}));
+document.querySelectorAll('form').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const note=form.querySelector('.form-note');if(note){note.textContent='Thanks for reaching out. This demo form is ready to connect to your preferred form service.';note.classList.remove('d-none')}}));
