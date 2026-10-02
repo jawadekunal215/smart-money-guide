@@ -18,6 +18,39 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3291179935830795"
         crossorigin="anonymous"></script>
+
+    <style>
+        /* Temporary Advertisement Placeholder */
+        .temporary-ad {
+            width: 100%;
+            min-height: 180px;
+            margin: 20px auto 45px;
+            padding: 35px 20px;
+            border: 1px dashed #b8b8b8;
+            border-radius: 12px;
+            background: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #777;
+        }
+
+        .temporary-ad .ad-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .temporary-ad .ad-message {
+            font-size: 15px;
+            color: #888;
+        }
+    </style>
 </head>
 
 <body>
@@ -232,22 +265,22 @@
     </section>
 
 
-    <!-- Advertisement Block -->
-    <div class="container">
+    <!-- Temporary Advertisement -->
+    <section class="container" aria-label="Advertisement">
 
-        <div class="ad-slot" aria-label="Advertisement">
+        <div class="temporary-ad">
 
-            <strong>
+            <div class="ad-label">
                 Advertisement
-            </strong>
+            </div>
 
-            <span>
+            <div class="ad-message">
                 Your ad will appear here
-            </span>
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
 
     <!-- Featured Guide -->
